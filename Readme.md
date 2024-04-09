@@ -8,29 +8,53 @@
 ## Git 명령어 및 사용법 정리
 1. git init
 
-    로컬 저장소에 git을 사용할 준비를 하는 과정. git init을 하게 되면 현재 폴더에 .git 이라는 폴더가 생성되며 해당 폴더에서 git 명령어를 사용할 수 있음.
+    로컬 저장소에 git을 사용할 준비를 하는 과정.
+    
+    git init을 하게 되면 현재 폴더에 .git 이라는 폴더가 생성되며 해당 폴더에서 git 명령어를 사용할 수 있음.
 2. git status
 
     파일에 수정 및 변경이 일어나면 해당 파일의 상태를 보여줌.
 3. git add
 
-    커밋하기 전 수정된 파일을 준비시킴. 물건을 구매 전 장바구니에 담는 것과 유사. git add [파일명]=>특정 파일을 add / git add .=>현재 폴더의 모든 파일을 add
+    커밋하기 전 수정된 파일을 준비시킴.
+    
+    물건을 구매 전 장바구니에 담는 것과 유사.
+    
+    git add [파일명]=>특정 파일을 add
+    
+    git add .=>현재 폴더의 모든 파일을 add
 4. git commit
 
-    로컬 저장소에 변경된 파일을 commit함. git commit -m "msg"=>한 줄 메세지를 포함하여 커밋 / git commit=>여러 줄 커밋 메세지를 남기고 싶을 때 사용.
+    로컬 저장소에 변경된 파일을 commit함.
+    
+    git commit -m "msg"=>한 줄 메세지를 포함하여 커밋
+    
+    git commit=>여러 줄 커밋 메세지를 남기고 싶을 때 사용.
 5. git log
 
     해당 명령어를 통해 커밋된 파일의 히스토리 파악.
 6. git remote
 
-    원격 레포지토리를 로컬에 연결할 때 사용.   git remote add origin [레포 주소] / git remote --v=>현재 연동된 레포 정보를 확인.    git remote update=>원격 레포에 등록된 브랜치를 전부 가져옴. (add origin만 할 경우 브랜치는 가져오지 않음.)
+    원격 레포지토리를 로컬에 연결할 때 사용.
+    
+    git remote add origin [레포 주소]
+    
+    git remote --v=>현재 연동된 레포 정보를 확인.
+    
+    git remote update=>원격 레포에 등록된 브랜치를 전부 가져옴. (add origin만 할 경우 브랜치는 가져오지 않음.)
 7. git push
 
-    로컬 저장소에 커밋된 파일을 원격 저장소에 push(이미 원격 저장소가 생성되어 연동되어 있어야 함)   git push [로컬 저장소 별칭][브랜치명]=>ex)git push origin master
+    로컬 저장소에 커밋된 파일을 원격 저장소에 push(이미 원격 저장소가 생성되어 연동되어 있어야 함)
+    
+    git push [로컬 저장소 별칭][브랜치명]=>ex)git push origin master
 8. git clone
 
-    로컬PC에 원격 저장소를 복사함   git clone [레포 주소]
-9. git branch=>현재 존재하는 브랜치 전부 조회   git branch [브랜치명]=>새로운 브랜치 생성(브랜치를 생성해도 현재 브랜치에서 새로 생성한 브랜치로 이동하지 않기 때문에 별도로 이동해야함)
+    로컬PC에 원격 저장소를 복사함
+    
+    git clone [레포 주소]
+9. git branch=>현재 존재하는 브랜치 전부 조회
+
+    git branch [브랜치명]=>새로운 브랜치 생성(브랜치를 생성해도 현재 브랜치에서 새로 생성한 브랜치로 이동하지 않기 때문에 별도로 이동해야함)
 10. git switch
 
     브랜치 이동 명령어 git switch [브랜치명]
