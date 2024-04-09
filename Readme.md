@@ -46,7 +46,7 @@
 
     로컬 저장소에 커밋된 파일을 원격 저장소에 push(이미 원격 저장소가 생성되어 연동되어 있어야 함)
     
-    git push [로컬 저장소 별칭][브랜치명]=>ex)git push origin master
+    git push [로컬 저장소 별칭][브랜치명]=>ex)git push origin master(현재는 main)
 8. git clone
 
     로컬PC에 원격 저장소를 복사함
@@ -58,3 +58,16 @@
 10. git switch
 
     브랜치 이동 명령어 git switch [브랜치명]
+11. git pull
+
+    특정 브랜치의 코드를 가져옴.
+
+    git clone과의 차이점은 git pull은 특정 브랜치의 코드를 가져옴(내려받기). git clone은 원격 저장소 코드를 통째로 가져옴(복사하기).
+    
+    git pull [로컬저장소별칭][브랜치명]=>ex)git pull origin master(main)
+
+12. git merge
+
+    로컬에서 현재 브랜치와 특정 브랜치를 합침.
+
+    git merge [브랜치명]
